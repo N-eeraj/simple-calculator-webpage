@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png">
+</head>
+<body>
+    <div id="calculator">
+        <h1>0</h1>
+        <div id="grid">
+            <button onclick="fnClear()">C</button>
+            <button onclick="fnPress('(')">(</button>
+            <button onclick="fnPress(')')">)</button>
+            <button onclick="fnDel()">Del</button>
+            
+            <button onclick="fnPress('7')">7</button>
+            <button onclick="fnPress('8')">8</button>
+            <button onclick="fnPress('9')">9</button>
+            <button onclick="fnPress('/')">/</button>
+            
+            <button onclick="fnPress('4')">4</button>
+            <button onclick="fnPress('5')">5</button>
+            <button onclick="fnPress('6')">6</button>
+            <button onclick="fnPress('*')">*</button>
+            
+            <button onclick="fnPress('1')">1</button>
+            <button onclick="fnPress('2')">2</button>
+            <button onclick="fnPress('3')">3</button>
+            <button onclick="fnPress('-')">-</button>
+            
+            <button onclick="fnPress('.')">.</button>
+            <button onclick="fnPress('0')">0</button>
+            <button onclick="fnSolve()">=</button>
+            <button onclick="fnPress('+')">+</button>
+            
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
