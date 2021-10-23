@@ -1,8 +1,7 @@
 :root{
     --white: #FFF;
     --light: #EEE;
-    --blue-1: #07F;
-    --blue-2: #0AF;
+    --blue: #07F;
     --grey: #222;
     --dark: #111;
 }
@@ -10,7 +9,9 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
+    transition: 400ms;
 }
 
 body{
@@ -19,7 +20,6 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--light);
-    transition: 400ms;
 }
 .body-dark{
     background-color: var(--grey);
@@ -61,7 +61,6 @@ label div div{
     left: 0.7vh;
     border-radius: 50%;
     background-color: var(--light);
-    transition: 200ms;
 }
 .toggle-button-dark{
     left: calc(100% - 4vh);
@@ -71,25 +70,85 @@ label div div{
 #calc{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 .calc-dark{
     background-color: var(--dark) !important;
 }
 
+#calc span{
+    width: 90%;
+    margin-left: 5%;
+    display: block;
+    text-align: end;
+    overflow-y: hidden;
+}
+#calc span:first-child{
+    margin-top: 10%;
+    padding: 0.5vh 0;
+    color: var(--grey);
+    font-size: 4vh;
+}
+.calc-span-first-dark{
+    color: var(--white) !important;
+}
+#calc span:last-child{
+    padding: 1.5vh 0;
+    color: var(--blue);
+    font-size: 5.6vh;
+    font-weight: 600;
+}
+.calc-span-last-dark{
+    color: var(--blue) !important;
+}
+
 #calc div:last-child{
-    display: none;
+    padding: 0 3%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 button{
-    width: 100px;
-    height: 100px;
+    width: 25%;
+    aspect-ratio: 1;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    font-size: 3.8vh;
+    font-weight: 700;
+    cursor: pointer;
+    transform: scale(0.9);
 }
-
+button:hover{
+    background-color: var(--light);
+}
+.button{
+    color: var(--white);
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+.button:hover{
+    background-color: var(--grey) !important;
+}
+button:last-child{
+    width: 50%;
+    aspect-ratio: 2;
+}
+.primary{
+    color: var(--blue);
+}
 #del{
-    background-image: url("del.png");
+    background-image: url("images/del-dark.png");
     background-position: center;
+    background-size: 60%;
     background-repeat: no-repeat;
+}
+.del-dark{
+    background-image: url("images/del-light.png") !important;
 }
 
 @media screen and (orientation: landscape)
