@@ -7,38 +7,41 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    <div id="calculator">
-        <h1>0</h1>
-        <div id="grid">
-            <button onclick="fnClear()">C</button>
-            <button onclick="fnPress('(')">(</button>
-            <button onclick="fnPress(')')">)</button>
-            <button onclick="fnDel()">Del</button>
-            
-            <button onclick="fnPress('7')">7</button>
-            <button onclick="fnPress('8')">8</button>
-            <button onclick="fnPress('9')">9</button>
-            <button onclick="fnPress('/')">/</button>
-            
-            <button onclick="fnPress('4')">4</button>
-            <button onclick="fnPress('5')">5</button>
-            <button onclick="fnPress('6')">6</button>
-            <button onclick="fnPress('*')">*</button>
-            
-            <button onclick="fnPress('1')">1</button>
-            <button onclick="fnPress('2')">2</button>
-            <button onclick="fnPress('3')">3</button>
-            <button onclick="fnPress('-')">-</button>
-            
-            <button onclick="fnPress('.')">.</button>
-            <button onclick="fnPress('0')">0</button>
-            <button onclick="fnSolve()">=</button>
-            <button onclick="fnPress('+')">+</button>
-            
+    <label for="dark_mode">
+        <span>Dark Mode</span>
+        <input type="checkbox" id="dark_mode">
+        <div><div></div></div>
+    </label>
+    <div id="calc">
+        <div>
+            <span></span>
+            <span></span>
+        </div>
+        <div>
+            <button>AC</button>
+            <button id="del"></button>
+            <button>%</button>
+            <button>&#247;</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>&#215;</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+            <button>.</button>
+            <button>0</button>
+            <button>=</button>
         </div>
     </div>
 </body>
-<script src="script.js"></script>
 </html>
