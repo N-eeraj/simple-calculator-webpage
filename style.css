@@ -151,6 +151,10 @@ button:last-child{
     background-image: url("images/del-light.png") !important;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 @media screen and (orientation: landscape)
 {
     label > div{
